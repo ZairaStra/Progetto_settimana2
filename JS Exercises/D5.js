@@ -19,17 +19,20 @@ for (i = 0; i < pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 const orderdPets = pets.sort();
-console.log(orderdPets);
+console.log(pets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 const reversedPets = pets.reverse();
-console.log(reversedPets);
+console.log(pets);
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+const deletePet = pets.shift();
+const addedPet = pets.push("redfish");
+console.log(pets);
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -54,12 +57,28 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
-
+/* const licensePlate = 6476228;
+for (i = 0; i < cars.length; i++) {
+  const addedPrp = cars.[i].push(licensePlate);
+}
+console.log(cars);
+ */
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-
+const obj = {
+  brand: "Nissan",
+  model: "Qashqai",
+  color: "green",
+  trims: ["baseline", "pro"],
+};
+const addedObj = cars.push(obj);
+console.log(cars);
+for (i = 0; i < cars.length; i++) {
+  const deleteTrim = cars[i].trims.pop();
+}
+console.log(cars);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
