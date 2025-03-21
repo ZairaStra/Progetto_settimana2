@@ -57,19 +57,22 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
-/* const licensePlate = 6476228;
+/* 
+const licensePlate = 6476228;
 for (i = 0; i < cars.length; i++) {
-  const addedPrp = cars.[i].push(licensePlate);
+;
 }
 console.log(cars);
  */
+//non sono riuscita ad accedere alle singole macchine, mi ha confusa molto il fatto che ci fossero solo le graffe a delimitare gli oggetti; non sapevo come accedere al loro interno
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 const obj = {
-  brand: "Nissan",
-  model: "Qashqai",
+  brand: "Kia",
+  model: "Sportage",
   color: "green",
   trims: ["baseline", "pro"],
 };
@@ -79,20 +82,42 @@ for (i = 0; i < cars.length; i++) {
   const deleteTrim = cars[i].trims.pop();
 }
 console.log(cars);
+
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
+for (i = 0; i < cars.length; i++) {
+  justTrims.push(cars[i].trims[0]);
+}
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+/* 
+for (let i = 0; i < cars.length; i++) {
+  const letter = cars.color.charAt(3);
+  if (letter == "b") {
+    alert = "Fizz";
+  } else {
+    alert = "Buzz";
+  }
+}
+console.log(alert);
+*/
+// la console mi dà errore sulla proprietà charAt ()
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
+
+while (numericArray !== 32) {
+  console.log(numericArray[i]);
+}
+// non capisco perchè stampi solo 84
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
