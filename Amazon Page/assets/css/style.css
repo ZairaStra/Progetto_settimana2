@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #e8eeee;
 }
 header div {
   display: block;
@@ -23,7 +24,6 @@ header li {
 }
 main {
   margin: 30px;
-  background-color: #e8eeee;
 }
 #banner {
   padding: 10px;
@@ -49,4 +49,59 @@ h1 {
 }
 h3 {
   font-weight: bold;
+}
+article {
+  height: 700px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+p {
+  height: 20px;
+  padding: 40px;
+  font-size: larger;
+  font-weight: bold;
+  text-align: left;
+}
+article a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: medium;
+  color: #105453;
+}
+.article1 {
+  display: inline-block;
+  margin: 20px;
+  height: 550px;
+  width: 22%;
+  background-image: url(../images/img_1.jpg);
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px #dee2e5;
+}
+.article2 {
+  display: inline-block;
+  margin: 20px;
+  height: 550px;
+  width: 22%;
+  background-image: url(../images/img_2.jpg);
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px #dee2e5;
+}
+.article3 {
+  display: inline-block;
+  margin: 20px;
+  height: 550px;
+  width: 22%;
+  background-image: url(../images/img_3.jpg);
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px #dee2e5;
+}
+.article4 {
+  display: inline-block;
+  margin: 20px;
+  height: 550px;
+  width: 22%;
+  background-image: url(../images/img_4.jpg);
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px #dee2e5;
 }
