@@ -21,3 +21,13 @@ header li {
   margin: 10px;
   vertical-align: center;
 }
+main {
+  margin: 30px;
+  background-color: #e8eeee;
+}
+#banner {
+  padding: 10px;
+  background-color: #f66503;
+  color: white;
+  text-align: center;
+}
